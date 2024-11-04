@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Abbhijit Venkatachalam</title>
+        <link rel="stylesheet" href="styles.css">
+        <!-- Link to Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+        /* General styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #001f3f; /* Dark blue background */
+            color: #fff;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            background-color: rgba(0, 0, 51, 0.8); /* Darker blue */
+            padding: 10px 20px;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .nav-links li {
+            margin: 0 15px;
+        }
+
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #7FDBFF; /* Light blue hover */
+        }
+
+        /* Name styling */
+        .name {
+            text-align: center;
+            font-size: 4rem;
+            margin-top: 20px;
+            color: #7FDBFF; /* Light blue */
+            font-weight: bold;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        /* Photo styling */
+        .profile-pic {
+            display: block;
+            margin: 50px auto 10px;
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Section styling */
+        .section {
+            padding: 60px 20px;
+            margin-top: 20px;
+            background-color: #004080; /* Light blue background */
+            color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #7FDBFF; /* Light blue */
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        /* Separator styling */
+        .separator {
+            width: 80%;
+            height: 2px;
+            background-color: #7FDBFF; /* Light blue */
+            margin: 40px auto;
+            border-radius: 5px;
+        }
+
+        /* Skills section */
+        .skills-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skill-item {
+            background-color: #005f99; /* Light blue box */
+            padding: 15px;
+            border-radius: 10px;
+            width: 180px;
+            text-align: center;
+            transition: transform 0.2s;
+            color: #fff;
+        }
+
+        .skill-item:hover {
+            transform: scale(1.05);
+            background-color: #7FDBFF; /* Hover effect */
+        }
+
+        .skill-logo {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        /* Experience and Projects section */
+        .grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .grid-item {
+            background-color: #005f99; /* Light blue */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 80%;
+            color: #fff;
+        }
+
+        .grid-item:hover {
+            background-color: #7FDBFF; /* Hover effect */
+        }
+
+        /* Contact section */
+        .social-icons a {
+            margin: 0 10px;
+            color: #7FDBFF; /* Light blue */
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        .social-icons a:hover {
+            color: #fff; /* Hover effect */
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #004080; /* Darker blue */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Photo -->
+    <img src="AbbhijitPic.jpg" alt="Abbhijit Venkatachalam" class="profile-pic">
+
+    <!-- Name Section -->
+    <div class="name">Abbhijit Venkatachalam</div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>As a Senior majoring in Computer Science at Arizona State University, I am passionate about data science, software development, and exploring various programming languages. I thrive on solving complex problems and constantly seek opportunities to expand my knowledge and skills. My dedication to continuous learning has driven me to master various technologies and programming languages. Outside of academics, I enjoy sports, which have taught me discipline, teamwork, and resilience.</p>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <p>Bachelor of Science in Computer Science<br>
+               Arizona State University<br>
+               GPA: 3.63/4.0<br>
+               Expected Graduation: May 2025</p>
+            <p>Certification: Data Science and Machine Learning Internship Program – Edureka</p>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-java fa-4x skill-logo"></i>
+                    <p>Java</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-python fa-4x skill-logo"></i>
+                    <p>Python (Pandas, NumPy, TensorFlow, Scikit-learn)</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js-square fa-4x skill-logo"></i>
+                    <p>JavaScript (Node.js)</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-html5 fa-4x skill-logo"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database fa-4x skill-logo"></i>
+                    <p>SQL, PostgreSQL</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-github fa-4x skill-logo"></i>
+                    <p>Git</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cog fa-4x skill-logo"></i> 
+                    <p>C</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt fa-4x skill-logo"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code fa-4x skill-logo"></i>
+                    <p>Rust</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code fa-4x skill-logo"></i>
+                    <p>Assembly (Verilog)</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-laptop-code fa-4x skill-logo"></i>
+                    <p>MATLAB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <h3>AI Chatbot Capstone Project</h3>
+                    <p>August 2024 - Present</p>
+                    <p>Building an AI chatbot with an avatar interface, providing real-time customer support using predefined and AI-generated responses.</p>
+                </div>
+                <div class="separator"></div>
+                <div class="grid-item">
+                    <h3>Movie Recommendation System</h3>
+                    <p>January 2024 - June 2024</p>
+                    <p>Developed a recommendation system using Python and R that utilized popularity, content-based, and collaborative filtering techniques to suggest movies.</p>
+                </div>
+                <div class="separator"></div>
+                <div class="grid-item">
+                    <h3>Software Engineering Project</h3>
+                    <p>August 2023 - December 2023</p>
+                    <p>Implemented a web login application with an effort tracker in Java, enhancing user authentication and team work logging.</p>
+                </div>
+                <div class="separator"></div>
+                <div class="grid-item">
+                    <h3>Security Gate Control Project</h3>
+                    <p>November 2022 - December 2022</p>
+                    <p>Developed a prototype security gate controller with microcontroller technology, integrating user authentication, motor control features, and intrusion detection sensors.</p>
+                </div>
+                <div class="separator"></div>
+                <div class="grid-item">
+                    <h3>Assembly Line Project</h3>
+                    <p>August 2021 - December 2021</p>
+                    <p>Programmed an autonomous vehicle for maze navigation to assist elderly people with transportation, focusing on obstacle avoidance and reliable navigation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <h3>Sports Program Supervisor - ASU</h3>
+                    <p>November 2023 - Present</p>
+                    <p>Officiated intramural sports such as basketball, football, soccer, and volleyball, ensuring rule enforcement and a safe, organized environment.</p>
+                </div>
+                <div class="separator"></div>
+                <div class="grid-item">
+                    <h3>Customer Care Agent - Education At Work</h3>
+                    <p>May 2024 - Present</p>
+                    <p>Assisted customers with Xbox support and managed customer inquiries for the Discover Credit Card Department, enhancing communication and problem-solving skills.</p>
+                </div>
+                <div class="separator"></div>
+                <div class="grid-item">
+                    <h3>E2 Camp Counselor - ASU</h3>
+                    <p>July 2023 - August 2024</p>
+                    <p>Organized fun and learning activities and managed groups of 7-8 freshman students, fostering a supportive and engaging environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:avenka97@asu.edu" style="color: #7FDBFF;">avenka97@asu.edu</a></p>
+            <p>Phone: (480) 341-8509</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/abbhijit-v-511607221/" class="icon-link" target="_blank">
+                    <i class="fab fa-linkedin" style="font-size: 2rem; color: #7FDBFF;"></i>
+                </a>
+                <a href="https://github.com/abbhijitv" class="icon-link" target="_blank">
+                    <i class="fab fa-github" style="font-size: 2rem; color: #7FDBFF;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Abbhijit Venkatachalam. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
